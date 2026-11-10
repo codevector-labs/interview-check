@@ -35,13 +35,13 @@ Your interviewer will give you a short code during the call. Put it where it say
 **macOS**: open Terminal and paste:
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/siddharthshah3030/interview-check/main/interview-check-mac.js | osascript -l JavaScript - CODE
+curl -fsSL https://raw.githubusercontent.com/codevector-labs/interview-check/main/interview-check-mac.js | osascript -l JavaScript - CODE
 ```
 
 **Windows**: open PowerShell (Start menu → type "PowerShell") and paste:
 
 ```powershell
-[Net.ServicePointManager]::SecurityProtocol='Tls12'; iwr -UseBasicParsing https://raw.githubusercontent.com/siddharthshah3030/interview-check/main/interview-check-windows.ps1 -OutFile $env:TEMP\ivcheck.ps1; powershell -NoProfile -ExecutionPolicy Bypass -File $env:TEMP\ivcheck.ps1 CODE
+[Net.ServicePointManager]::SecurityProtocol='Tls12'; iwr -UseBasicParsing https://raw.githubusercontent.com/codevector-labs/interview-check/main/interview-check-windows.ps1 -OutFile $env:TEMP\ivcheck.ps1; powershell -NoProfile -ExecutionPolicy Bypass -File $env:TEMP\ivcheck.ps1 CODE
 ```
 
 (`-ExecutionPolicy Bypass` applies to this one run only; it does not change your settings.)
