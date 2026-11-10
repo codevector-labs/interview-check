@@ -7,8 +7,10 @@ can both see that no AI assistant is helping in the background.
 ## What it looks at
 
 - Windows that apps have asked to keep **out of screen shares**. This is how "invisible" interview
-  overlays hide.
-- Running apps and processes: names and locations only.
+  overlays hide. For any it finds, it asks your OS who signed that app — a normal signed app (your
+  meeting app's share bar, a password manager) is shown as a "glance", an unsigned/unknown one as a
+  flag.
+- Running apps and processes: names, and file locations for programs it can verify.
 - How many displays are connected, and whether it is running inside a virtual machine.
 - Names of installed **browser extensions** (with on/off state) and **code-editor extensions**.
 
@@ -17,8 +19,10 @@ can both see that no AI assistant is helping in the background.
 - It does not change or install anything on your computer.
 - It does not read your documents, browsing history, cookies or passwords. From browser settings it
   reads only the extension list.
-- It does not send anything anywhere. It saves a plain-text report; you read it, then send it to
-  your interviewer yourself.
+- It does not upload your files, your activity, or anything about you. It saves a plain-text report;
+  you read it, then send it to your interviewer yourself. (On Windows, to confirm who signed a
+  hidden window's app, it asks Windows to check that app's signature — the same thing Windows does
+  whenever you open a program. No personal data leaves your machine.)
 
 Please read the code before running it. Each check is a single file:
 [`interview-check-mac.js`](interview-check-mac.js) ·
